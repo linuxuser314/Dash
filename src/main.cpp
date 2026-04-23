@@ -4,6 +4,7 @@ int main(void){
 	initSerial9600();
 	initTimer2Millis();
 	initTimer0PWM();
+	
 	msgStruct tempMsg = {'\0', 0};
 	while(true){
 		tempMsg = readSerialMsg();
